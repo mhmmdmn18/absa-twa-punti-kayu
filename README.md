@@ -1,91 +1,111 @@
-# Analisis Sentimen Berbasis Aspek terhadap Taman Wisata Alam Punti Kayu Berdasarkan Ulasan Google Maps
-Repository ini berisi implementasi penelitian **Aspect-Based Sentiment Analysis (ABSA)** pada ulasan pengguna Google Maps terhadap **Taman Wisata Alam (TWA) Punti Kayu** menggunakan pendekatan **Machine Learning** dan **Transfer Learning**.
+# Aspect-Based Sentiment Analysis of Punti Kayu Nature Park Based on Google Maps User Reviews
 
-Penelitian bertujuan untuk menganalisis sentimen wisatawan berdasarkan aspek tertentu guna mengidentifikasi kelebihan, kekurangan, dan rekomendasi perbaikan pengelolaan wisata.
+This repository contains the implementation of an **Aspect-Based Sentiment Analysis (ABSA)** study on **Google Maps user reviews** of **Punti Kayu Nature Park**, utilizing both **Machine Learning** and **Transfer Learning** approaches.
 
-## 🎯 Tujuan Penelitian
-- Menganalisis sentimen wisatawan terhadap TWA Punti Kayu.
-- Mengidentifikasi sentimen pada tiap aspek wisata.
-- Membandingkan performa model **Machine Learning** dan **Transfer Learning**.
-- Memberikan insight untuk evaluasi pengelolaan wisata.
+The research aims to analyze tourist sentiment across specific aspects in order to identify strengths, weaknesses, and actionable recommendations for improving tourism management and visitor experience.
 
-## 🏛️ Aspek yang Dianalisis
-- **Aksesibilitas**
-- **Amenitas**
-- **Daya Tarik**
-- **Harga**
-- **SDM (Sumber Daya Manusia)**
-- **Citra**
+## 🎯 Research Objectives
 
-## 🤖 Model yang Digunakan
+This study aims to:
+
+- Analyze tourist sentiment toward **TWA Punti Kayu**.
+- Identify sentiment distribution across tourism-related aspects.
+- Compare the performance of **Machine Learning** and **Transfer Learning** models.
+- Provide insights to support tourism management evaluation and improvement.
+
+## 🏛️ Analyzed Aspects
+
+The sentiment analysis is conducted based on the following tourism aspects:
+
+- **Accessibility**
+- **Amenities**
+- **Attractions**
+- **Pricing**
+- **Human Resources (HR)**
+- **Destination Image**
+
+## 🤖 Models Used
+
 ### Machine Learning
-- Logistic Regression (LR)
-- Support Vector Machine (SVM)
+- **Logistic Regression (LR)**
+- **Support Vector Machine (SVM)**
 
 ### Transfer Learning
-- BERT
-- IndoBERT
+- **BERT**
+- **IndoBERT**
 
-## ⚙️ Skenario Eksperimen
-Penelitian menggunakan tiga skenario pra-pemrosesan data:
+## ⚙️ Experimental Scenarios
 
-- **Skenario 1** → seluruh teknik pra-pemrosesan diterapkan  
-- **Skenario 2** → kombinasi tertentu teknik pra-pemrosesan  
-- **Skenario 3** → tanpa penghapusan *stopwords*
+The study applies three different data preprocessing scenarios:
 
-## 📊 Hasil Eksperimen
-| Model | Rata-rata F1 Score |
-|--------|-------------------|
+- **Scenario 1** → Full preprocessing pipeline applied  
+- **Scenario 2** → Selected preprocessing techniques applied  
+- **Scenario 3** → Preprocessing without *stopwords removal*
+
+## 📊 Experimental Results
+
+| Model | Average F1 Score |
+|--------|------------------|
 | **IndoBERT** | **97.95%** |
 | BERT | 95.75% |
 | SVM | 87.33% |
 | Logistic Regression | 86.83% |
 
-Model terbaik diperoleh oleh **IndoBERT pada Skenario 3** dengan **F1 Score 98.22%**.
+The best-performing model was **IndoBERT under Scenario 3**, achieving an **F1 Score of 98.22%**.
 
-### Temuan Utama
-- **Transfer Learning** memiliki performa lebih baik dibandingkan **Machine Learning**.
-- **IndoBERT** menjadi model terbaik karena dilatih menggunakan korpus bahasa Indonesia sehingga lebih memahami konteks ulasan wisatawan.
-- **LR dan SVM** mencapai performa terbaik pada **Skenario 1**.
-- **BERT dan IndoBERT** mencapai performa terbaik pada **Skenario 3** (*tanpa stopwords removal*).
+### Key Findings
 
-## 📈 Hasil Analisis Sentimen
-Distribusi sentimen wisatawan terhadap **TWA Punti Kayu**:
+- **Transfer Learning models** outperformed traditional **Machine Learning models**.
+- **IndoBERT** achieved the highest performance due to its training on large-scale Indonesian language corpora, enabling a better understanding of contextual meaning in Indonesian tourism reviews.
+- **Logistic Regression** and **SVM** achieved their best performance under **Scenario 1**.
+- **BERT** and **IndoBERT** performed best under **Scenario 3** (*without stopwords removal*).
 
-| Sentimen | Persentase |
-|-----------|------------|
-| Positif | **40.5%** |
-| Negatif | 32.8% |
-| Netral | 26.7% |
+## 📈 Sentiment Analysis Results
 
-### Insight Per Aspek
+The overall sentiment distribution toward **TWA Punti Kayu** is as follows:
 
-✅ **Cenderung Positif**
-- Aksesibilitas
-- Citra
+| Sentiment | Percentage |
+|------------|------------|
+| Positive | **40.5%** |
+| Negative | 32.8% |
+| Neutral | 26.7% |
 
-⚠️ **Perlu Perhatian**
-- Amenitas
-- Harga
-- SDM
-- Daya Tarik
+### Aspect-Based Insights
 
-Hasil penelitian menunjukkan bahwa peningkatan pada aspek **Amenitas, Harga, SDM, dan Daya Tarik** berpotensi meningkatkan **Citra TWA Punti Kayu**. Meski sentimen positif mendominasi, tingginya sentimen negatif menunjukkan perlunya evaluasi layanan, sementara tingginya sentimen netral mengindikasikan pengalaman wisata yang belum cukup berkesan bagi sebagian pengunjung.
+✅ **Predominantly Positive Aspects**
+- Accessibility
+- Destination Image
 
-## 🧪 Metode Evaluasi
-Model dievaluasi menggunakan:
+⚠️ **Aspects Requiring Improvement**
+- Amenities
+- Pricing
+- Human Resources
+- Attractions
+
+The findings indicate that improvements in **Amenities, Pricing, Human Resources, and Attractions** may significantly enhance the overall **Destination Image** of TWA Punti Kayu.
+
+Although **positive sentiment dominates (40.5%)**, the relatively high percentage of **negative sentiment (32.8%)** highlights the need for service improvements. Furthermore, the considerable proportion of **neutral sentiment (26.7%)** suggests that some visitors had experiences that were not particularly memorable.
+
+## 🧪 Evaluation Metrics
+
+Model performance was evaluated using:
+
 - Accuracy
 - Precision
 - Recall
-- **F1 Score** (metrik utama)
+- **F1 Score** *(primary evaluation metric)*
 
-## 📖 Skripsi / Full Paper
-Skripsi lengkap dapat diakses melalui:
-https://repository.unsri.ac.id/156468/
+## 📖 Thesis / Full Paper
+
+The complete thesis can be accessed at:
+
+:contentReference[oaicite:0]{index=0}
 
 ## 👨‍💻 Author
+
 **Muhammad Aminuddin**  
 Universitas Sriwijaya
 
 ## 📜 License
-Repository ini dibuat untuk keperluan akademik dan penelitian.
+
+This repository was created for academic and research purposes.
