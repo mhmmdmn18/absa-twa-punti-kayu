@@ -99,7 +99,7 @@ Model performance was evaluated using:
 
 The complete thesis can be accessed at:
 
-:contentReference[oaicite:0]{index=0}
+https://repository.unsri.ac.id/156468/
 
 ## 👨‍💻 Author
 
