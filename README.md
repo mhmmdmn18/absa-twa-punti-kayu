@@ -118,14 +118,11 @@ Meskipun sentimen positif mendominasi (**40.5%**), masih terdapat **32.8% sentim
 ---
 
 ## 🧪 Metode Evaluasi
-
 Model dievaluasi menggunakan metrik:
-
 - Accuracy
 - Precision
 - Recall
 - **F1 Score**
-
 F1 Score dipilih sebagai metrik utama karena mampu memberikan keseimbangan antara precision dan recall dalam klasifikasi sentimen.
 
 ---
@@ -133,18 +130,15 @@ F1 Score dipilih sebagai metrik utama karena mampu memberikan keseimbangan antar
 ## 📖 Skripsi / Full Paper
 
 Repository skripsi lengkap dapat diakses melalui:
-
-:contentReference[oaicite:0]{index=0}
+[:contentReference[oaicite:0]{index=0}](https://repository.unsri.ac.id/156468/)
 
 ---
 
 ## 👨‍💻 Author
-
 **Muhammad Aminuddin**  
 Universitas Sriwijaya
 
 ---
 
 ## 📜 License
-
 Repository ini dibuat untuk keperluan akademik dan penelitian.
