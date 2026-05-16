@@ -89,9 +89,7 @@ Model dievaluasi menggunakan:
 - **F1 Score** (metrik utama)
 
 ## 📖 Skripsi / Full Paper
-
 Skripsi lengkap dapat diakses melalui:
-
 https://repository.unsri.ac.id/156468/
 
 ## 👨‍💻 Author
