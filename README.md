@@ -4,6 +4,8 @@ Repository ini berisi implementasi penelitian skripsi mengenai **Aspect-Based Se
 
 Penelitian ini bertujuan untuk menganalisis sentimen wisatawan berdasarkan aspek tertentu guna memberikan rekomendasi perbaikan layanan dan pengelolaan wisata.
 
+---
+
 ## 📌 Latar Belakang
 
 Ulasan wisatawan pada platform digital seperti Google Maps mengandung informasi penting mengenai pengalaman pengunjung. Namun, analisis sentimen secara umum sering kali belum mampu mengidentifikasi aspek spesifik yang menjadi sumber kepuasan atau ketidakpuasan wisatawan.
@@ -115,55 +117,6 @@ Meskipun sentimen positif mendominasi (**40.5%**), masih terdapat **32.8% sentim
 
 ---
 
-## 📂 Struktur Repository
-
-```bash
-├── dataset/
-├── preprocessing/
-├── modeling/
-│   ├── logistic_regression/
-│   ├── svm/
-│   ├── bert/
-│   └── indobert/
-├── evaluation/
-├── notebook/
-├── results/
-└── README.md
-```
-
-> Struktur folder dapat disesuaikan dengan isi repository.
-
----
-
-## 🚀 Cara Menjalankan Project
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/mhmmdmn18/absa-twa-punti-kayu.git
-cd absa-twa-punti-kayu
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Jalankan Notebook / Script
-
-```bash
-jupyter notebook
-```
-
-atau
-
-```bash
-python main.py
-```
-
----
-
 ## 🧪 Metode Evaluasi
 
 Model dievaluasi menggunakan metrik:
@@ -177,13 +130,11 @@ F1 Score dipilih sebagai metrik utama karena mampu memberikan keseimbangan antar
 
 ---
 
-## 📖 Sitasi
+## 📖 Skripsi / Full Paper
 
-Jika repository ini membantu penelitian Anda, mohon sertakan sitasi terhadap penelitian ini.
+Repository skripsi lengkap dapat diakses melalui:
 
-**Judul Skripsi:**
-
-> *Analisis Sentimen Berbasis Aspek terhadap Taman Wisata Alam Punti Kayu Berdasarkan Ulasan Pengguna Google Maps*
+:contentReference[oaicite:0]{index=0}
 
 ---
 
