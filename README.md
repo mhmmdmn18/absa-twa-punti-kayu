@@ -8,7 +8,7 @@ The research aims to analyze tourist sentiment across specific aspects in order 
 
 This study aims to:
 
-- Analyze tourist sentiment toward **TWA Punti Kayu**.
+- Analyze tourist sentiment toward **Punti Kayu Nature Park**.
 - Identify sentiment distribution across tourism-related aspects.
 - Compare the performance of **Machine Learning** and **Transfer Learning** models.
 - Provide insights to support tourism management evaluation and improvement.
@@ -62,7 +62,7 @@ The best-performing model was **IndoBERT under Scenario 3**, achieving an **F1 S
 
 ## 📈 Sentiment Analysis Results
 
-The overall sentiment distribution toward **TWA Punti Kayu** is as follows:
+The overall sentiment distribution toward **Punti Kayu Nature Park** is as follows:
 
 | Sentiment | Percentage |
 |------------|------------|
@@ -82,7 +82,7 @@ The overall sentiment distribution toward **TWA Punti Kayu** is as follows:
 - Human Resources
 - Attractions
 
-The findings indicate that improvements in **Amenities, Pricing, Human Resources, and Attractions** may significantly enhance the overall **Destination Image** of TWA Punti Kayu.
+The findings indicate that improvements in **Amenities, Pricing, Human Resources, and Attractions** may significantly enhance the overall **Destination Image** of Punti Kayu Nature Park.
 
 Although **positive sentiment dominates (40.5%)**, the relatively high percentage of **negative sentiment (32.8%)** highlights the need for service improvements. Furthermore, the considerable proportion of **neutral sentiment (26.7%)** suggests that some visitors had experiences that were not particularly memorable.
 
