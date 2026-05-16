@@ -1,18 +1,15 @@
 # Analisis Sentimen Berbasis Aspek terhadap Taman Wisata Alam Punti Kayu Berdasarkan Ulasan Google Maps
-
 Repository ini berisi implementasi penelitian **Aspect-Based Sentiment Analysis (ABSA)** pada ulasan pengguna Google Maps terhadap **Taman Wisata Alam (TWA) Punti Kayu** menggunakan pendekatan **Machine Learning** dan **Transfer Learning**.
 
 Penelitian bertujuan untuk menganalisis sentimen wisatawan berdasarkan aspek tertentu guna mengidentifikasi kelebihan, kekurangan, dan rekomendasi perbaikan pengelolaan wisata.
 
 ## 🎯 Tujuan Penelitian
-
 - Menganalisis sentimen wisatawan terhadap TWA Punti Kayu.
 - Mengidentifikasi sentimen pada tiap aspek wisata.
 - Membandingkan performa model **Machine Learning** dan **Transfer Learning**.
 - Memberikan insight untuk evaluasi pengelolaan wisata.
 
 ## 🏛️ Aspek yang Dianalisis
-
 - **Aksesibilitas**
 - **Amenitas**
 - **Daya Tarik**
@@ -21,7 +18,6 @@ Penelitian bertujuan untuk menganalisis sentimen wisatawan berdasarkan aspek ter
 - **Citra**
 
 ## 🤖 Model yang Digunakan
-
 ### Machine Learning
 - Logistic Regression (LR)
 - Support Vector Machine (SVM)
@@ -31,7 +27,6 @@ Penelitian bertujuan untuk menganalisis sentimen wisatawan berdasarkan aspek ter
 - IndoBERT
 
 ## ⚙️ Skenario Eksperimen
-
 Penelitian menggunakan tiga skenario pra-pemrosesan data:
 
 - **Skenario 1** → seluruh teknik pra-pemrosesan diterapkan  
@@ -39,7 +34,6 @@ Penelitian menggunakan tiga skenario pra-pemrosesan data:
 - **Skenario 3** → tanpa penghapusan *stopwords*
 
 ## 📊 Hasil Eksperimen
-
 | Model | Rata-rata F1 Score |
 |--------|-------------------|
 | **IndoBERT** | **97.95%** |
@@ -50,14 +44,12 @@ Penelitian menggunakan tiga skenario pra-pemrosesan data:
 Model terbaik diperoleh oleh **IndoBERT pada Skenario 3** dengan **F1 Score 98.22%**.
 
 ### Temuan Utama
-
 - **Transfer Learning** memiliki performa lebih baik dibandingkan **Machine Learning**.
 - **IndoBERT** menjadi model terbaik karena dilatih menggunakan korpus bahasa Indonesia sehingga lebih memahami konteks ulasan wisatawan.
 - **LR dan SVM** mencapai performa terbaik pada **Skenario 1**.
 - **BERT dan IndoBERT** mencapai performa terbaik pada **Skenario 3** (*tanpa stopwords removal*).
 
 ## 📈 Hasil Analisis Sentimen
-
 Distribusi sentimen wisatawan terhadap **TWA Punti Kayu**:
 
 | Sentimen | Persentase |
@@ -81,7 +73,6 @@ Distribusi sentimen wisatawan terhadap **TWA Punti Kayu**:
 Hasil penelitian menunjukkan bahwa peningkatan pada aspek **Amenitas, Harga, SDM, dan Daya Tarik** berpotensi meningkatkan **Citra TWA Punti Kayu**. Meski sentimen positif mendominasi, tingginya sentimen negatif menunjukkan perlunya evaluasi layanan, sementara tingginya sentimen netral mengindikasikan pengalaman wisata yang belum cukup berkesan bagi sebagian pengunjung.
 
 ## 🧪 Metode Evaluasi
-
 Model dievaluasi menggunakan:
 - Accuracy
 - Precision
@@ -93,10 +84,8 @@ Skripsi lengkap dapat diakses melalui:
 https://repository.unsri.ac.id/156468/
 
 ## 👨‍💻 Author
-
 **Muhammad Aminuddin**  
 Universitas Sriwijaya
 
 ## 📜 License
-
 Repository ini dibuat untuk keperluan akademik dan penelitian.
